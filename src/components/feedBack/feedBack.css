@@ -1,0 +1,35 @@
+.container {
+    width: 20%;
+    margin: 30px auto;
+    box-shadow: inset 0 0 15px #7af9f7;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.feedback-result {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.7rem;
+}
+
+.like {
+    color: greenyellow;
+}
+
+.dislike {
+    color: red;
+}
+
+.btn-container div {
+    display: flex;
+}
+.btn-container button {
+    flex: 1;
+    margin: 5px 15px;
+}
+
+.btn-container button:active {
+    outline: 1px solid #fff;
+}
