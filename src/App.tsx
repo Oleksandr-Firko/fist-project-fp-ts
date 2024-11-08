@@ -1,14 +1,10 @@
 import "./App.css";
-import {
-  Route,
-  Routes,
-  BrowserRouter
-} from "react-router-dom";
-import HomeWork1 from "./components/homeWorkComponents/HomeWork1/HomeWork1.jsx";
-import HomeWork2 from "./components/homeWorkComponents/HomeWork2/HomeWork2.jsx";
-import HomeWork3 from "./components/homeWorkComponents/HomeWork3/HomeWork3.jsx";
-import HomeWork4 from "./components/homeWorkComponents/HomeWork4/HomeWork4.jsx";
-import HomeWork5 from "./components/homeWorkComponents/HomeWork5/HomeWork5.jsx";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import HomeWork1 from "./components/homeWorkComponents/HomeWork1/HomeWork1";
+import HomeWork2 from "./components/homeWorkComponents/HomeWork2/HomeWork2";
+import HomeWork3 from "./components/homeWorkComponents/HomeWork3/HomeWork3";
+import HomeWork4 from "./components/homeWorkComponents/HomeWork4/HomeWork4";
+import HomeWork5 from "./components/homeWorkComponents/HomeWork5/HomeWork5";
 
 function App() {
   return (
@@ -19,7 +15,6 @@ function App() {
     </div>
   );
 }
-
 
 function Header() {
   return (

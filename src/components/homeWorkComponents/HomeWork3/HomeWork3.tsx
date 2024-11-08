@@ -1,7 +1,7 @@
 import LoginForm from "../../loginForm/LoginForm";
 import "./HomeWork3.css";
 
-function HomeWork3(params) {
+function HomeWork3() {
   return (
     <>
       <h1 className="title">Home work 3</h1>

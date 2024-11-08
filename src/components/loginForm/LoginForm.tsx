@@ -2,7 +2,7 @@ import "./loginForm.css";
 import MyInput from "../myInput/MyInput";
 import MyButton from "../myButton/MyButton";
 
-function LoginForm(params) {
+function LoginForm() {
   return (
     <form className="form-container">
       <MyInput

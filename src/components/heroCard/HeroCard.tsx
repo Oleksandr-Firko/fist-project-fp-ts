@@ -1,6 +1,14 @@
 import "./heroCard.css";
 
-function HeroCard({ isDark, name, age, image, weapons }) {
+interface IHeroProps{
+  isDark:boolean;
+  name:string;
+  age:number;
+  image:string;
+  weapons:string[];
+}
+
+function HeroCard({ isDark, name, age, image, weapons }:IHeroProps) {
   return (
     <article className={isDark ? "hero-dark" : "hero-light"}>
       <h3>{name}</h3>
@@ -10,7 +18,7 @@ function HeroCard({ isDark, name, age, image, weapons }) {
       <img src={image} alt="" />
       <p>
         Hero weapons
-        {weapons.map((weapon, index) => (
+        {weapons.map((weapon:string, index:number) => (
           <span className="weapon" key={index}>
             | {weapon}
           </span>

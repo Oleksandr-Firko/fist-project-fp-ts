@@ -3,16 +3,16 @@ import MyButton from "../myButton/MyButton";
 import { useState } from "react";
 
 function FeedBack() {
-  const [ like, setLike ] = useState(0);
-  const [ disLike, setDislike ] = useState(0);
+  const [ like, setLike ] = useState<number>(0);
+  const [ disLike, setDislike ] = useState<number>(0);
 
-  const handleLike = () => {
+  const handleLike = ():void => {
     setLike(prev => ++prev);
   };
-  const handleDislike = () => {
+  const handleDislike = ():void => {
     setDislike((prev) => ++prev);
   };
-  const resetAllData = () => {
+  const resetAllData = ():void => {
     setLike(0);
     setDislike(0);
   };

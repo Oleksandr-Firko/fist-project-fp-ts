@@ -3,7 +3,7 @@ import portrait from "../../../assets/photo.jpg";
 import instIco from "../../../assets/instagram.png";
 import gitIco from "../../../assets/line-md--github-loop.svg";
 
-function HomeWork1(params) {
+function HomeWork1() {
   return (
     <div className="container-hw1">
       <PortraitPhoto />
@@ -45,14 +45,18 @@ function PortraitPhoto() {
   );
 }
 
-function Button(props) {
+interface IButtonProps{
+  accountLink:string;
+  title:string;
+  icoLink:string;
+}
+
+function Button(props:IButtonProps) {
   return (
     <div className="button-box">
       <button
         onClick={() => (window.location.href = props.accountLink)}
         className="icon"
-        alt="ico"
-        target="_blank"
       >
         <span>{props.title}</span>
         <img className="icon" src={props.icoLink} alt="ico" />

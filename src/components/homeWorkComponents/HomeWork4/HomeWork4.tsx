@@ -1,7 +1,7 @@
 import FeedBack from "../../feedBack/FeedBack";
 import "./HomeWork4.css";
 
-function HomeWork4(params) {
+function HomeWork4() {
   return (
     <>
       <h1 className="title">Home work 4</h1>

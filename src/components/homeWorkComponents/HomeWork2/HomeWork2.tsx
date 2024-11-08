@@ -1,7 +1,15 @@
 import "./homeWork2.css";
 import ProfileCardV2 from "../../profileCardV2/ProfileCardV2";
 
-let famousPeople = [
+interface IPeople{
+    id: number;
+    photo_url: string;
+    name: string;
+    professions: string[];
+    hobbies: string[];
+}
+
+let famousPeople:IPeople[] = [
   {
     id: 0,
     photo_url:
@@ -34,7 +42,7 @@ function HomeWork2() {
       <h1 className="title">Home Work 2</h1>
       <h1 className="title">The most famous people in the world!</h1>
       <div className="container-hw2">
-        {famousPeople.map((person) => {
+        {famousPeople.map((person:IPeople) => {
           return (
             <ProfileCardV2
               key={person.id}
