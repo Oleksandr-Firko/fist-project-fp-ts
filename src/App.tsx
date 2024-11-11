@@ -5,7 +5,7 @@ import HomeWork2 from "./components/homeWorkComponents/HomeWork2/HomeWork2";
 import HomeWork3 from "./components/homeWorkComponents/HomeWork3/HomeWork3";
 import HomeWork4 from "./components/homeWorkComponents/HomeWork4/HomeWork4";
 import HomeWork5 from "./components/homeWorkComponents/HomeWork5/HomeWork5";
-
+import HomeWork8 from "./components/homeWorkComponents/homeWork8/HomeWork8";
 function App() {
   return (
     <div className="App">
@@ -35,6 +35,9 @@ function Header() {
         <a className="btn" href="/homeWork5">
           HomeWork5
         </a>
+        <a className="btn" href="/homeWork8">
+          HomeWork8
+        </a>
       </div>
     </header>
   );
@@ -50,6 +53,7 @@ function Main() {
           <Route path="/homeWork3" element={<HomeWork3 />} />
           <Route path="/homeWork4" element={<HomeWork4 />} />
           <Route path="/homeWork5" element={<HomeWork5 />} />
+          <Route path="/homeWork8" element={<HomeWork8 />} />
         </Routes>
       </BrowserRouter>
     </main>
