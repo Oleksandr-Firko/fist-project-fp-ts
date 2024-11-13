@@ -6,6 +6,15 @@ import HomeWork3 from "./components/homeWorkComponents/HomeWork3/HomeWork3";
 import HomeWork4 from "./components/homeWorkComponents/HomeWork4/HomeWork4";
 import HomeWork5 from "./components/homeWorkComponents/HomeWork5/HomeWork5";
 import HomeWork8 from "./components/homeWorkComponents/homeWork8/HomeWork8";
+import CatFacts from "./components/classWorkComponents/lesson10/CatFacts";
+//import ErrorPage from "./components/errorPage/ErrorPage";
+import { useRouteError } from "react-router-dom";
+
+interface IRouteError {
+  statusText?: string;
+  message?: string;
+}
+
 function App() {
   return (
     <div className="App">
@@ -38,12 +47,16 @@ function Header() {
         <a className="btn" href="/homeWork8">
           HomeWork8
         </a>
+        <a className="btn" href="/lesson10">
+        lesson10
+        </a>
       </div>
     </header>
   );
 }
 
 function Main() {
+  //const error = useRouteError() as IRouteError;
   return (
     <main>
       <BrowserRouter>
@@ -54,6 +67,8 @@ function Main() {
           <Route path="/homeWork4" element={<HomeWork4 />} />
           <Route path="/homeWork5" element={<HomeWork5 />} />
           <Route path="/homeWork8" element={<HomeWork8 />} />
+          <Route path="/lesson10" element={<CatFacts />} />
+          {/*<Route path="*" element={<ErrorPage errorData={error} />} />*/}
         </Routes>
       </BrowserRouter>
     </main>
