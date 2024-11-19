@@ -1,0 +1,12 @@
+.statePractice span {
+  margin-right: 10px;
+}
+
+.statePractice h4 {
+  text-decoration: underline;
+}
+
+.statePractice p {
+  font-size: 15px;
+  font-style: italic;
+}

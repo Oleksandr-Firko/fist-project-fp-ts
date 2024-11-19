@@ -1,0 +1,9 @@
+.container {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.resultBox span{
+    padding: 5px;
+    border:1px solid #fff
+}

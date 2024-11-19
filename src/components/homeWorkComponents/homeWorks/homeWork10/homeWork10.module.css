@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+    height: 90%;
+    overflow-y: auto;
+
+}
+
+.warningMessage {
+    color: red;
+    font-weight: 900;
+    padding: 7px;
+    text-transform: uppercase;
+}

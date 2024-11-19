@@ -1,0 +1,18 @@
+.navBtn {
+    display: inline-block;
+    padding: 7px 10px;
+    color: aqua;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #7af9f7;
+    margin: 0 5px;
+}
+.activeLink{
+    margin: 0 5px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #7af9f7;
+    color: black;
+    text-decoration: none;
+}

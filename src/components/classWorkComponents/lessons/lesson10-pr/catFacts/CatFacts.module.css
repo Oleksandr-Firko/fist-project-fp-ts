@@ -1,0 +1,26 @@
+.catInfoBox {
+    margin: auto;
+    border: 1px solid rgb(129, 129, 218);
+    display: inline-block;
+}
+
+.decorBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.infoBox {
+    width: 700px;
+    height: 525px;
+    padding: 25px;
+    background-color: rgba(58, 45, 45, 0.384);
+    overflow-y: auto;
+}
+.infoBox li:nth-child(even){
+    background-color: rgb(65, 70, 70);
+}
+.infoBox li:nth-child(odd){
+    background-color: rgb(37, 37, 37);
+    color:rgb(170, 169, 169);
+}

@@ -3,6 +3,7 @@ interface IRouteErrorProps {
   statusText?: string;
   message?: string;
 }
+
 function ErrorPage({ errorData }:any): JSX.Element {//----------------------------------------------------------
   return (
     <div id="error-page">

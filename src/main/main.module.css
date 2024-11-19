@@ -1,0 +1,7 @@
+.main {
+    height: 100%;
+    position: relative;
+    width: 85%;
+    text-align: center;
+    overflow: hidden;
+}
