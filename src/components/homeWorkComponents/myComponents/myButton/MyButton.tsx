@@ -5,15 +5,19 @@ interface IMyButtonProps {
   type?: "button" | "submit";
   func?: () => void;
   bgColor?: string;
+  isDisabled?: boolean;
 }
 
-const handleDefaultClick = () => {
-  console.log("default click!");
-};
-
-function MyButton({ name, type = "button", func= handleDefaultClick, bgColor }: IMyButtonProps) {
+function MyButton({
+  name,
+  type = "button",
+  func,
+  bgColor,
+  isDisabled = false,
+}: IMyButtonProps) {
   return (
     <button
+      disabled={isDisabled}
       className={style.button}
       onClick={func}
       type={type}

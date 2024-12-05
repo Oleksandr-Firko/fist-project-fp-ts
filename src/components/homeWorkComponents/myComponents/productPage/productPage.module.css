@@ -1,0 +1,29 @@
+.container {
+    margin: 0 auto;
+    padding: 25px;
+    width: 85%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.imgWrapper img{
+    max-height:500px ;
+    object-fit: fill;
+}
+.container a{
+    padding: 10px;
+    border: 1px solid aqua;
+    color: black;
+    border-radius: 7px;
+    background-color: aqua;
+    text-decoration: none;
+}
+.container a:hover{
+    padding: 10px;
+    border: 1px solid aqua;
+    color: aqua;
+    background-color: #00ffff00;
+    border-radius: 7px;
+    text-decoration: none;
+}
+

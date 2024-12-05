@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -28,11 +29,18 @@ h5 {
   margin-top: 20px;
 }
 
-.d-f-row{
+.d-f-row {
   display: flex;
   flex-direction: row;
-} 
+}
 
-.a-i-center{
+.j-c-space-between {
+  justify-content: space-between;
+}
+
+.a-i-center {
   align-items: center;
+}
+button, a{
+  cursor: pointer;
 }

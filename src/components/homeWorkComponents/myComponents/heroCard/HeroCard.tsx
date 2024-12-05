@@ -15,7 +15,7 @@ function HeroCard({ isDark, name, age, image, weapons }:IHeroProps) {
       <p>
         {name} is {age} years old
       </p>
-      <img src={image} alt="" />
+      <img className={style.img} src={image} alt="" />
       <p>
         Hero weapons
         {weapons.map((weapon:string, index:number) => (

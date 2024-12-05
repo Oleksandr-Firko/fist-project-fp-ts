@@ -30,4 +30,5 @@ nav {
     padding: 17px;
     height: 80%;
     border-radius: 15px;
+    overflow: hidden;
 }

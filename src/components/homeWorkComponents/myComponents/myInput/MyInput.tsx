@@ -1,12 +1,14 @@
 import style from "./myInput.module.css";
+import cn from "classnames";
 
 interface IMyInputProps {
   name: string;
-  type: "button" | "password" | "email" | "text";
-  placeholder: string;
+  type: "button" | "password" | "email" | "text" | "number";
+  placeholder?: string;
   label: string;
-  value?: string;
+  value?: string | number;
   onChange?: (e: React.ChangeEvent<any>) => void;
+  horizontalLabel?: boolean;
 }
 
 function MyInput({
@@ -16,9 +18,14 @@ function MyInput({
   label,
   value,
   onChange,
+  horizontalLabel,
 }: IMyInputProps) {
   return (
-    <div className={style.formElement}>
+    <div
+      className={cn(style.formElement, [
+        horizontalLabel ? style.horizontalLabel : "",
+      ])}
+    >
       <label htmlFor={name}>{label}</label>
       <input
         id={name}

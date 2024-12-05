@@ -1,0 +1,20 @@
+.container {
+    width: 100%;
+    height: 30px; 
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 25px;
+    overflow: hidden;
+    align-items: center;
+    border-top: 1px solid aqua;
+    border-bottom: 1px solid aqua;
+}
+.deleteBtn{
+    height: 95%; 
+    cursor: pointer;
+}
+.deleteBtn img{
+    height: 100%;
+}

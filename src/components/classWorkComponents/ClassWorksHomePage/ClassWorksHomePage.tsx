@@ -20,6 +20,7 @@ export default function ClassWorksHomePage() {
         <NavLink className={({isActive}) => isActive? style.activeLink: style.navBtn} to='lesson11'>class work 11</NavLink>
         <NavLink className={({isActive}) => isActive? style.activeLink: style.navBtn} to='lesson12'>class work 12</NavLink>
         <NavLink className={({isActive}) => isActive? style.activeLink: style.navBtn} to='lesson13'>class work 13</NavLink>
+        <NavLink className={({isActive}) => isActive? style.activeLink: style.navBtn} to='lesson16pr'>class work 16-pr</NavLink>
       </nav>
       <div className={style.contentBox}>
         <Outlet />

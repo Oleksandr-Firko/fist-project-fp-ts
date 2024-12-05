@@ -3,6 +3,6 @@
     width: 100%;
     gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    height: 600px;
+    height: 85%;
     overflow-y: auto;
   }

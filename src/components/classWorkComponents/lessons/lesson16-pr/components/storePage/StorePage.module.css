@@ -1,0 +1,36 @@
+.container{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow-y: auto;
+}
+.preview {
+    height: 400px;
+    width: 400px;
+}
+.price{
+    padding: 15px;
+    background-color: rgba(5, 255, 255, 0.205);
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+}
+.buttonBox{
+    margin: 15px;
+}
+.buttonBox form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.buttonBox button{
+margin: 0;
+}
+
+.buttonBox .input{
+    width: 70px
+}

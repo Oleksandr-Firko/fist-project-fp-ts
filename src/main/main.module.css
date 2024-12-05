@@ -5,3 +5,14 @@
     text-align: center;
     overflow: hidden;
 }
+
+.storeMain{
+    height: 100%;
+    position: relative;
+    width: 85%;
+    text-align: center;
+    overflow: hidden; 
+}
+.loginMessage{
+    font-size: 2.2rem;
+}
